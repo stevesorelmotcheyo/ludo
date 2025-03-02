@@ -1,0 +1,679 @@
+
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+body
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#principale
+{
+    width:770px;
+    padding:5px;
+    box-shadow:0px 0px 10px 5px black inset;
+    border-radius:6px;
+    position: relative;
+}
+
+#plateau
+{
+    border: 1px solid black;
+    position: relative;
+
+}
+
+#maison_vert,#maison_rouge,#maison_bleu,#maison_jaune
+{
+   padding: 10px;
+
+}
+#position1
+{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      background-color: green;
+      border-radius:10px;
+}
+
+#maison_jaune
+{
+    padding: 10px;
+}
+#position2
+{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      background-color: rgb(255, 242, 0);
+      border-radius:10px;
+}
+
+#position3
+{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      background-color: rgb(255, 60, 0);
+      border-radius:10px;
+}
+
+#position4
+{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      background-color: rgb(0, 166, 255);
+      border-radius:10px;
+      width: 100%;
+}
+
+
+#cercle1,#cercle2,#cercle3,#cercle4#cercle1,#cercle2,#cercle3,#cercle4,#cercle5,#cercle6,#cercle7,#cercle8,#cercle9,#cercle10,#cercle11,#cercle12,#cercle13,#cercle14,#cercle15,#cercle16
+{
+    width:80px;
+    height:80px;
+    border-radius: 150px;
+    margin:30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 220, 209);
+    /* position: relative; */
+}
+
+#maison1
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(6,1fr) ;
+    width:150px;
+}
+#maison2
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* width: 160px; */
+    height: 150px;
+}
+
+#maison3
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* width: 160px; */
+    height: 150px;   
+}
+
+#maison4
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(6,1fr) ;
+    width:150px;
+}
+
+#div1,#div2,#div3,#div4
+{
+    display: flex;
+
+}
+
+#milieu
+{
+    width:150px;
+    height:150px;
+    border:1px solid blue;
+}
+img
+{
+    width: 100%;
+    border-radius:150px;
+    border:none;
+    position:absolute;
+    transition: 1s;
+}
+#plateau
+{
+    border: 1px solid black;
+}
+
+.cases
+{
+    width:50px;
+    height: 50px;
+    border:1px solid black;
+   
+}
+.cases_jaune
+{
+    background-color:rgb(255, 242, 0);;
+    width:50px;
+    height: 50px;
+    border:1px solid black;
+}
+.cases_vert
+{
+    background-color:green;
+    width:50px;
+    height: 50px;
+    border:1px solid black;
+}
+
+.cases_bleu
+{
+    background-color: rgb(0, 166, 255);
+    width:50px;
+    height: 50px;
+    border:1px solid black;
+}
+
+.cases_rouge
+{
+    background-color: rgb(255, 60, 0);
+    width:50px;
+    height: 50px;
+    border:1px solid black;
+}
+
+#im
+{
+    border-radius:0px;
+    height: 100%;
+}
+/*        */ 
+
+#milieu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 149, 149);
+}
+#de
+{
+    border:1px solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+    font-size: 50px;
+    transition: 1s;
+    cursor: pointer;
+    z-index: 100;
+}
+img
+{
+    width:50px;
+    padding:5px;
+}
+.anime
+{ 
+     animation-name:pop;
+     animation-duration:0.3s;
+     animation-timing-function:ease-in-out;
+     animation-direction: alternate;
+     animation-delay:0.01s;
+     animation-iteration-count:0.1s;
+     transition:transform 0.3s ease-out;
+}
+/* 
+#jouer_1
+{
+    border:1px solid black;
+    width:770px;
+    height:70px;
+    margin-bottom:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding:5px;
+}
+
+#joueur_vert
+{
+
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+
+}
+#joueur_jaune
+{
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+}
+
+
+#jouer_2
+{
+    border:1px solid black;
+    width:770px;
+    height:70px;
+    margin-bottom:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding:5px;
+}
+
+#joueur_rouge
+{
+
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+
+}
+#joueur_bleu
+{
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+} */
+
+
+#jouer_1
+{
+    border:1px solid black;
+    width:770px;
+    height:70px;
+    margin-bottom:2px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom:1px;
+    box-shadow: 0px 0px 10px 4px black;
+    margin-bottom:5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    padding: 5px;
+
+}
+
+#joueur_vert
+{
+
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+
+}
+#joueur_jaune
+{
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+}
+
+
+
+#jouer_2
+{
+    border:1px solid black;
+    width:770px;
+    height:70px;
+    margin-bottom:2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding:5px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 10px 4px black;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: none;
+
+}
+
+#joueur_rouge
+{
+
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+
+}
+#joueur_bleu
+{
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+}
+
+
+#de_vert
+{
+    border: 1px solid black;
+    width:60px;
+    height: 60px;
+    border-radius:6px;
+    box-shadow: 0px 0px 2px 0px black;
+
+
+}
+
+
+#de_rouge
+{
+    border: 1px solid black;
+    width:60px;
+    height: 60px;
+    border-radius:6px;
+    box-shadow: 0px 0px 2px 0px black;
+
+}
+
+
+
+#de_jaune
+{
+    border: 1px solid black;
+    width:60px;
+    height: 60px;
+    border-radius:6px;
+    box-shadow: 0px 0px 2px 0px black;
+
+}
+
+
+
+#de_bleu
+{
+    border: 1px solid black;
+    width:60px;
+    height: 60px;
+    border-radius:6px;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+
+
+
+@media screen and (max-width:770px)
+{
+    body{
+            
+            background-color: #f1eded;
+    }
+    #plateau
+    {
+            width:450px;
+            border-radius: 6px;
+            background-color: rgba(99, 105, 184, 0.664);
+    }
+
+    #principale
+    {
+        width:460px;
+        background-color: rgb(255, 255, 255);
+    }
+  
+#cercle1,#cercle2,#cercle3,#cercle4#cercle1,#cercle2,#cercle3,#cercle4,#cercle5,#cercle6,#cercle7,#cercle8,#cercle9,#cercle10,#cercle11,#cercle12,#cercle13,#cercle14,#cercle15,#cercle16
+{
+    width:40px;
+    height:40px;
+    border-radius: 150px;
+    margin:20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 220, 209);
+    /* position: relative; */
+}
+.cases
+{
+    width:30px;
+    height: 30px;
+
+}
+
+#maison_vert,#maison_rouge,#maison_bleu,#maison_jaune
+{
+    padding: 10px;
+    margin: 0;
+}
+#maison1,#maisin_vert
+{
+       width:100px;
+}
+
+.cases_jaune
+{
+    background-color:rgb(255, 242, 0);;
+    width:30px;
+    height: 30px;
+    border:1px solid black;
+}
+.cases_vert
+{
+    background-color:green;
+    width:30px;
+    height: 30px;
+    border:1px solid black;
+}
+
+.cases_bleu
+{
+    background-color: rgb(0, 166, 255);
+    width:30px;
+    height: 30px;
+    border:1px solid black;
+}
+
+.cases_rouge
+{
+    background-color: rgb(255, 60, 0);
+    width:30px;
+    height: 30px;
+    border:1px solid black;
+}
+
+#milieu
+{
+   width: 90px;
+   height: 90px;
+}
+
+
+#maison1
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(6,1fr) ;
+    width:90px;
+}
+#maison2
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* width: 160px; */
+    height: 90px;
+}
+
+#maison3
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* width: 160px; */
+    height: 90px;   
+}
+
+#maison4
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(6,1fr) ;
+    width:90px;
+}
+
+
+#jouer_1
+{
+    border:1px solid black;
+    width:450px;
+    height:70px;
+    margin-bottom:2px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom:1px;
+    box-shadow: 0px 0px 10px 4px black;
+    margin-bottom:5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #acb6b1a9;
+
+}
+
+#joueur_vert
+{
+
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+
+}
+#joueur_jaune
+{
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+}
+
+
+
+#jouer_2
+{
+    border:1px solid black;
+    width:450px;
+    height:70px;
+    margin-bottom:2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding:5px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 10px 4px black;
+    border-radius: 6px;
+    background-color: #acb6b1a9;
+    border: none;
+
+}
+
+#joueur_rouge
+{
+
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+
+}
+#joueur_bleu
+{
+    border: 1px solid black;
+    width: 50%;
+    height: 60px;
+}
+
+
+#de_vert
+{
+    border: 1px solid black;
+    width:60px;
+    height: 60px;
+    border-radius:6px;
+    box-shadow: 0px 0px 2px 0px black;
+
+
+}
+
+
+#de_rouge
+{
+    border: 1px solid black;
+    width:60px;
+    height: 60px;
+    border-radius:6px;
+    box-shadow: 0px 0px 2px 0px black;
+
+}
+
+
+
+#de_jaune
+{
+    border: 1px solid black;
+    width:60px;
+    height: 60px;
+    border-radius:6px;
+    box-shadow: 0px 0px 2px 0px black;
+
+}
+
+
+
+#de_bleu
+{
+    border: 1px solid black;
+    width:60px;
+    height: 60px;
+    border-radius:6px;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+}
+
+
+   /* Animation keyframes */
+@keyframes pop 
+{
+    0% {
+        rotate: 360deg;
+        transform:scale(1.4);
+    }
+    50% {
+        rotate: -360deg;
+        background-color: rgb(20, 20, 20);
+    }
+    75%
+    {
+         scale:0.8;
+         background-color:#000000;
+    }
+    100% {
+        rotate: 360deg;
+        background-color:rgb(75, 76, 76);
+    }
+}
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation au clic</title>
+    <style>
+        /* Style de base du bouton */
+        #monBouton {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Animation lors du clic */
+        .anime {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <button id="monBouton">Clique-moi</button>
+
+    <script>
+        const bouton = document.getElementById('monBouton');
+
+        bouton.addEventListener('click', () => {
+            bouton.classList.add('anime');
+
+            // Retire l'animation après 300ms pour pouvoir la rejouer
+            setTimeout(() => {
+                bouton.classList.remove('anime');
+            }, 300);
+        });
+    </script>
+
+</body>
+</html>
