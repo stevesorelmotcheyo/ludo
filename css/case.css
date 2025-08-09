@@ -1,0 +1,36 @@
+
+.cases
+{
+    border: 1px solid black;
+    width:55px;
+    height: 55px;
+    background-color: rgb(163, 167, 167);
+}
+.cases_jaune{
+   border: 1px solid black;
+    width:55px;
+    height: 55px;   
+    background-color: yellow;
+}
+.cases_vert
+{
+    border: 1px solid black;
+    width:55px;
+    height: 55px;   
+    background-color: green;
+}
+
+.cases_bleu
+{
+    border: 1px solid black;
+    width:55px;
+    height: 55px;   
+    background-color: blue;
+}
+.cases_rouge
+{
+    border: 1px solid black;
+    width:55px;
+    height: 55px; 
+    background-color:red;  
+}
